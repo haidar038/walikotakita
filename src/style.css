@@ -1,0 +1,80 @@
+:root {
+    --color-1: #2d85b6;
+    --color-2: #5bc0f9;
+    --color-3: #d0e8ff;
+    --color-4: #f1faff;
+    --color-5: #fffa86;
+}
+
+* {
+    font-family: "Plus Jakarta Sans";
+}
+
+body {
+    background-color: var(--color-4);
+}
+
+header {
+    background-color: var(--color-3);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Space Grotesk";
+    color: var(--color-1);
+}
+
+.navbar-brand {
+    font-family: "Freestyle Script";
+}
+
+.btn-blue {
+    background-color: var(--color-2);
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: var(--color-1);
+    color: white;
+}
+
+.hero-img {
+    height: 500px;
+    position: absolute;
+    right: 12rem;
+    bottom: 0;
+}
+
+.blur1 {
+    position: absolute;
+    left: 20rem;
+    top: -14rem;
+    background-color: var(--color-5);
+    height: 20rem;
+    width: 20rem;
+    filter: blur(120px);
+}
+
+.blur2,
+.blur3 {
+    background-color: var(--color-2);
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    filter: blur(120px);
+}
+
+.blur2 {
+    left: 20rem;
+    bottom: -14rem;
+}
+
+.blur3 {
+    right: 8rem;
+    bottom: -14rem;
+}
+
+.grotesk {
+    font-family: "Space Grotesk";
+}
