@@ -16,6 +16,7 @@ body {
 
 header {
     background-color: var(--color-3);
+    border-radius: 0rem 0rem 0rem 8rem;
 }
 
 h1,
@@ -25,7 +26,16 @@ h3 {
     color: var(--color-1);
 }
 
-.navbar-brand {
+footer {
+    background-color: var(--color-2);
+    background-image: linear-gradient(rgba(91, 192, 249, 0.7), rgba(91, 192, 249, 0.7)), url(./imgs/act_walikota4.jpg);
+    /* background-blend-mode: screen; */
+    background-size: cover; /* Sesuaikan sesuai kebutuhan */
+    background-position: center; /* Sesuaikan sesuai kebutuhan */
+}
+
+.navbar-brand,
+footer a {
     font-family: "Freestyle Script";
 }
 
@@ -39,11 +49,61 @@ h3 {
     color: white;
 }
 
-.hero-img {
-    height: 500px;
+.obj-color-primary {
+    color: var(--color-2);
+}
+
+.quote-icon {
+    top: -2rem;
+    left: 2rem;
+    z-index: 99;
+}
+
+.sub-underlined {
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-2);
+    position: relative;
+}
+
+.sub-underlined::after {
     position: absolute;
-    right: 12rem;
+    right: 0;
+    content: "";
+    height: 3px;
+    width: 32%;
+    background-color: var(--color-3);
+}
+
+.hero-img,
+.hero-img2 {
+    position: absolute;
     bottom: 0;
+    right: 12rem;
+}
+
+.hero-img {
+    height: 450px;
+}
+
+.hero-img2 {
+    height: 500px;
+}
+
+.highlight {
+    background-color: var(--color-2);
+}
+
+.text-blue {
+    color: var(--color-2);
+}
+
+.text-dark-blue {
+    color: var(--color-1);
+}
+
+.about-img {
+    height: 500px;
 }
 
 .blur1 {
@@ -63,6 +123,7 @@ h3 {
     height: 20rem;
     width: 20rem;
     filter: blur(120px);
+    z-index: 0;
 }
 
 .blur2 {
@@ -75,6 +136,109 @@ h3 {
     bottom: -14rem;
 }
 
+.bubble1,
+.bubble2 {
+    position: absolute;
+    scale: 0.8;
+}
+
+.bubble1 {
+    bottom: 12rem;
+    right: 30rem;
+}
+
+.bubble2 {
+    bottom: 6rem;
+    right: 6rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--color-2);
+}
+
+.nav-primary {
+    --bs-nav-link-color: gray;
+    --bs-nav-link-hover-color: var(--color-2);
+}
+
 .grotesk {
     font-family: "Space Grotesk";
+}
+
+.navbar-expand-lg {
+    background: none !important;
+}
+
+#tentang {
+    background-color: var(--color-4);
+}
+
+#karir {
+    background-color: #fff;
+}
+
+#cuitan .carousel-inner {
+    padding: 0 14em;
+}
+
+#cuitan .card {
+    border-color: var(--color-2);
+}
+
+#aktivitas .karir-wrapper {
+    background-color: var(--color-2);
+    background-image: linear-gradient(rgba(91, 192, 249, 0.7), rgba(91, 192, 249, 0.7)), url(./imgs/act_walikota.jpg);
+    /* background-blend-mode: screen; */
+    background-size: cover; /* Sesuaikan sesuai kebutuhan */
+    background-position: center; /* Sesuaikan sesuai kebutuhan */
+}
+
+#cuitan .foto-profil {
+    border-radius: 50%;
+    /* border: 2px solid var(--color-2); */
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+#kontak .form-control {
+    /* border-radius: 0; */
+    border: 2px solid #ddd;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#kontak input:focus,
+#kontak textarea:focus {
+    box-shadow: 0 0 0;
+    border-bottom-color: var(--color-2);
+}
+
+@media screen and (max-width: 768.9px) {
+    header {
+        background-color: rgba(255, 255, 255, 0.85);
+        background-image: url(./imgs/PakWali.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -18rem 0;
+        background-blend-mode: overlay;
+        border-radius: 0 0 0 6rem;
+    }
+
+    nav {
+        z-index: 100;
+    }
+
+    .navbar-expand-lg {
+        background: white !important;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    #cuitan .carousel-inner {
+        padding: 0 4rem;
+    }
 }
