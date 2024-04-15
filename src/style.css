@@ -31,7 +31,7 @@ footer {
     background-image: linear-gradient(rgba(91, 192, 249, 0.7), rgba(91, 192, 249, 0.7)), url(./imgs/act_walikota4.jpg);
     /* background-blend-mode: screen; */
     background-size: cover; /* Sesuaikan sesuai kebutuhan */
-    background-position: center; /* Sesuaikan sesuai kebutuhan */
+    background-position: center -8rem; /* Sesuaikan sesuai kebutuhan */
 }
 
 .navbar-brand,
@@ -218,10 +218,10 @@ footer a {
 @media screen and (max-width: 768.9px) {
     header {
         background-color: rgba(255, 255, 255, 0.85);
-        background-image: url(./imgs/PakWali.JPG);
+        background-image: url(./imgs/WALIKOTA.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: -18rem 0;
+        background-position: center 0;
         background-blend-mode: overlay;
         border-radius: 0 0 0 6rem;
     }
@@ -234,8 +234,17 @@ footer a {
         background: white !important;
     }
 
-    .hero-img {
+    .hero-img,
+    .hero-img2,
+    .bubble1,
+    .bubble2 {
         display: none;
+    }
+
+    .quote-icon {
+        top: -1rem;
+        left: 1%;
+        z-index: 99;
     }
 
     #cuitan .carousel-inner {
