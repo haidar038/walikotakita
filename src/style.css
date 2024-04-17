@@ -12,6 +12,7 @@
 
 body {
     background-color: var(--color-4);
+    overflow-x: hidden;
 }
 
 header {
@@ -30,8 +31,9 @@ footer {
     background-color: var(--color-2);
     background-image: linear-gradient(rgba(91, 192, 249, 0.7), rgba(91, 192, 249, 0.7)), url(./imgs/act_walikota4.jpg);
     /* background-blend-mode: screen; */
+    background-repeat: no-repeat;
     background-size: cover; /* Sesuaikan sesuai kebutuhan */
-    background-position: center -8rem; /* Sesuaikan sesuai kebutuhan */
+    background-position: center; /* Sesuaikan sesuai kebutuhan */
 }
 
 .navbar-brand,
