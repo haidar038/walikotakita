@@ -2,3 +2,8 @@ localhost.key
 localhost.pem
 .vscode
 settings.json
+.vercel
+node_modules
+.env.development.local
+package-lock.json
+package.json

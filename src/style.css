@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--color-4);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -109,7 +109,7 @@ footer a {
 }
 
 .blur1 {
-    position: absolute;
+    position: fixed;
     left: 20rem;
     top: -14rem;
     background-color: var(--color-5);
@@ -120,8 +120,8 @@ footer a {
 
 .blur2,
 .blur3 {
+    position: fixed;
     background-color: var(--color-2);
-    position: absolute;
     height: 20rem;
     width: 20rem;
     filter: blur(120px);
