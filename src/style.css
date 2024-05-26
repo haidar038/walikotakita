@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family: "Plus Jakarta Sans";
+    font-family: 'Plus Jakarta Sans';
 }
 
 body {
@@ -23,7 +23,7 @@ header {
 h1,
 h2,
 h3 {
-    font-family: "Space Grotesk";
+    font-family: 'Space Grotesk';
     color: var(--color-1);
 }
 
@@ -38,7 +38,7 @@ footer {
 
 .navbar-brand,
 footer a {
-    font-family: "Freestyle Script";
+    font-family: 'Freestyle Script';
 }
 
 .btn-blue {
@@ -71,7 +71,7 @@ footer a {
 .sub-underlined::after {
     position: absolute;
     right: 0;
-    content: "";
+    content: '';
     height: 3px;
     width: 32%;
     background-color: var(--color-3);
@@ -156,7 +156,8 @@ footer a {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    background-color: var(--color-2);
+    background-color: white;
+    color: var(--color-1);
 }
 
 .nav-primary {
@@ -165,11 +166,47 @@ footer a {
 }
 
 .grotesk {
-    font-family: "Space Grotesk";
+    font-family: 'Space Grotesk';
 }
 
 .navbar-expand-lg {
     background: none !important;
+}
+
+.social-icons {
+    color: var(--color-2);
+    transition: ease-in-out 0.3s;
+}
+
+.social-icons:hover {
+    color: var(--color-1);
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    border: 2px solid var(--color-2); /* Add the blue border */
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid var(--color-2);
+}
+
+.speech-bubble .text {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-2);
 }
 
 #tentang {

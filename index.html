@@ -112,24 +112,44 @@
                         <div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="500">
                             <ul class="nav nav-primary nav-pills mb-5 justify-content-evenly" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-5 active" id="pills-deskripsi-tab" data-bs-toggle="pill" data-bs-target="#pills-deskripsi" type="button" role="tab" aria-controls="pills-deskripsi" aria-selected="true">
-                                        Personal
+                                    <button
+                                        class="nav-link button-tabs fs-5 active"
+                                        id="pills-deskripsi-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-deskripsi"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-deskripsi"
+                                        aria-selected="true"
+                                    >
+                                        Deskripsi Diri
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-5" id="pills-pendidikan-tab" data-bs-toggle="pill" data-bs-target="#pills-pendidikan" type="button" role="tab" aria-controls="pills-pendidikan" aria-selected="false">
+                                    <button
+                                        class="nav-link button-tabs fs-5"
+                                        id="pills-pendidikan-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-pendidikan"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-pendidikan"
+                                        aria-selected="false"
+                                    >
                                         Pendidikan
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link fs-5" id="pills-quotes-tab" data-bs-toggle="pill" data-bs-target="#pills-quotes" type="button" role="tab" aria-controls="pills-quotes" aria-selected="false">Quotes</button>
+                                    <button class="nav-link button-tabs fs-5" id="pills-quotes-tab" data-bs-toggle="pill" data-bs-target="#pills-quotes" type="button" role="tab" aria-controls="pills-quotes" aria-selected="false">
+                                        Quotes
+                                    </button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-deskripsi" role="tabpanel" aria-labelledby="pills-deskripsi-tab" tabindex="0">
                                     <div class="row row-gap-4">
                                         <div class="col-sm-12 col-lg-6 order-last order-lg-0">
-                                            <div class="card card-body border-0 shadow rounded-top-0 rounded-bottom-4 rounded-end-4 fs-5">
+                                            <div class="card card-body border-0 shadow rounded-top-0 rounded-bottom-4 rounded-end-4 fs-5 p-4">
                                                 <p>
                                                     Dr. M. Tauhid Soleman, M.Si. sebagai <span class="highlight p-1 text-light">figur yang sederhana</span> dalam perjalanan karir di pemerintahan sosoknya yang sudah banyak memberikan
                                                     <span class="highlight p-1 text-light">kontirbusi</span>
@@ -143,7 +163,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-pendidikan" role="tabpanel" aria-labelledby="pills-pendidikan-tab" tabindex="0">
-                                    <div class="card card-body shadow border-0 rounded-4">
+                                    <div class="card card-body shadow border-0 rounded-4 p-5 p-sm-3">
                                         <div class="row">
                                             <div class="col-sm-12 col-lg-6">
                                                 <table>
@@ -457,49 +477,347 @@
                 <div class="karir-wrapper">
                     <div class="container">
                         <div class="row py-5">
-                            <div class="col-lg-4 col-sm-12 p-4">
-                                <div class="card rounded-4 border-0">
-                                    <img src="./src/imgs/act_walikota3.png" class="card-img-top rounded-4" alt="..." />
-                                    <div class="card-body">
-                                        <h5 class="card-text-title fw-bold text-blue text-truncate" style="width: 100%">Ternate Youth Planner</h5>
-                                        <p class="card-text text-blue">20 Maret 2023</p>
+                            <!-- Mobile View -->
+                            <div id="karir-mobile" class="carousel slide d-flex d-lg-none">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota3.png" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Ternate Youth Planner</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota2.png" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Akademi Wirusaha Maluku Utara</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota1.png" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Berbagi Takjil dengan Masyarakat Perkotaan</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota9.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Bersama Beberapa Pimpinan Daerah di Acara Penghargaan Golden Award</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota5.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Perayaan Event UMKM dan Keuangan Digital</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota6.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Bersama Gubernur, Abdul Gani Kasuba dan Rombongan</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota7.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Aksi Nyata Mewujudkan Program Ternate Bersih</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota8.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Berbincang Sembari Meresap Aspirasi Warga Pulau Hiri</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota16.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Bersama Para Atlit Tinju Remaja</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota17.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Antusiasme Masyarakat Pulau Batang Dua Terhadap Kedatangan Walikota dan Rombongan</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota10.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Deklarasi Rumah Ibadah Ramah Anak Se-Kota Ternate</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota11.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Pertemuan Bersama Pemuka Agama dan Tokoh Adat di Pulau Moti</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota12.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Foto Bersama dengan Anggota Pramuka di Depan Kantor Walikota</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota13.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Peringatan Hari Anak</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota14.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Diskusi Bersama Warga di Program FORIS Andalan</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card rounded-4 border-0">
+                                            <img src="./src/imgs/act_walikota15.jpg" class="card-img-top rounded-4" alt="..." />
+                                            <div class="card-body">
+                                                <h5 class="card-text-title fw-bold text-blue">Kolaborasi Bersama Masyarakat di Aksi Bela Palestina</h5>
+                                                <p class="card-text text-blue">20 Maret 2023</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#karir-mobile" data-bs-slide="prev">
+                                    <span class="bi bi-arrow-left-circle-fill text-light fs-1" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#karir-mobile" data-bs-slide="next">
+                                    <span class="bi bi-arrow-right-circle-fill text-light fs-1" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <div class="col-lg-4 col-sm-12 p-4">
-                                <div class="card rounded-4 border-0">
-                                    <img src="./src/imgs/act_walikota2.png" class="card-img-top rounded-4" alt="..." />
-                                    <div class="card-body">
-                                        <h5
-                                            class="card-text-title fw-bold text-blue text-truncate"
-                                            style="width: 100%"
-                                            data-bs-toggle="tooltip"
-                                            data-bs-placement="top"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="Akademi Wirusaha Maluku Utara"
-                                        >
-                                            Akademi Wirusaha Maluku Utara
-                                        </h5>
-                                        <p class="card-text text-blue">20 Maret 2023</p>
+
+                            <!-- DESKTOP VIEW -->
+                            <div class="desktop-view d-lg-block d-none">
+                                <div id="karir-desktop" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row px-5">
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota3.png" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Ternate Youth Planner</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota2.png" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Akademi Wirusaha Maluku Utara</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota1.png" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Berbagi Takjil dengan Masyarakat Perkotaan</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota9.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Bersama Beberapa Pimpinan Daerah di Acara Penghargaan Golden Award</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota5.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Perayaan Event UMKM dan Keuangan Digital</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota6.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Bersama Gubernur, Abdul Gani Kasuba dan Rombongan</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota7.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Aksi Nyata Mewujudkan Program Ternate Bersih</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota8.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Berbincang Sembari Meresap Aspirasi Warga Pulau Hiri</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota16.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Bersama Para Atlit Tinju Remaja</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota17.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Antusiasme Masyarakat Pulau Batang Dua Terhadap Kedatangan Walikota dan Rombongan</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota10.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Deklarasi Rumah Ibadah Ramah Anak Se-Kota Ternate</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota11.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Pertemuan Bersama Pemuka Agama dan Tokoh Adat di Pulau Moti</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota12.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Foto Bersama dengan Anggota Pramuka di Depan Kantor Walikota</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota13.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Peringatan Hari Anak</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota14.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Diskusi Bersama Warga di Program FORIS Andalan</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-4"></div>
+                                                <div class="col-4">
+                                                    <div class="card rounded-4 border-0">
+                                                        <img src="./src/imgs/act_walikota15.jpg" class="card-img-top rounded-4" alt="..." />
+                                                        <div class="card-body">
+                                                            <h5 class="card-text-title fw-bold text-blue">Kolaborasi Bersama Masyarakat di Aksi Bela Palestina</h5>
+                                                            <p class="card-text text-blue">20 Maret 2023</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-12 p-4">
-                                <div class="card rounded-4 border-0">
-                                    <img src="./src/imgs/act_walikota1.png" class="card-img-top rounded-4" alt="..." />
-                                    <div class="card-body">
-                                        <h5
-                                            class="card-text-title fw-bold text-blue text-truncate"
-                                            style="width: 100%"
-                                            data-bs-toggle="tooltip"
-                                            data-bs-placement="top"
-                                            data-bs-custom-class="custom-tooltip"
-                                            data-bs-title="Berbagi Takjil dengan Masyarakat Perkotaan"
-                                        >
-                                            Berbagi Takjil dengan Masyarakat Perkotaan
-                                        </h5>
-                                        <p class="card-text text-blue">20 Maret 2023</p>
-                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#karir-desktop" data-bs-slide="prev">
+                                        <span class="bi bi-arrow-left-circle-fill text-light fs-1" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#karir-desktop" data-bs-slide="next">
+                                        <span class="bi bi-arrow-right-circle-fill text-light fs-1" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -522,8 +840,8 @@
                                         <div class="d-flex justify-content-center mb-3">
                                             <img class="card-img foto-profil shadow" src="./src/imgs/foto_profil.png" alt="Foto Profil" />
                                         </div>
-                                        <h3 class="text-blue fw-bold mb-0">Tauhid Soleman</h3>
-                                        <small class="opacity-75 mb-3">15 minutes ago</small>
+                                        <h3 class="text-blue fw-bold mb-3">Tauhid Soleman</h3>
+                                        <!-- <small class="opacity-75 mb-3">15 minutes ago</small> -->
                                         <p class="mb-0">"Cinta seperti buku, semakin dibaca semakin suka."</p>
                                         <em>~ Alexander Sattler</em>
                                     </div>
@@ -535,8 +853,8 @@
                                         </div>
                                         <h3 class="text-blue fw-bold mb-0">Tauhid Soleman</h3>
                                         <small class="opacity-75 mb-4">15 minutes ago</small>
-                                        <p class="mb-0">"Cinta seperti buku, semakin dibaca semakin suka."</p>
-                                        <em>~ Alexander Sattler</em>
+                                        <p class="mb-0">"Janganlah pernah menyerah ketika kamu masih mampu berusaha lagi. Tidak ada kata berakhir sampai kamu berhenti mencoba."</p>
+                                        <em>~ Brian Dyson</em>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -546,8 +864,8 @@
                                         </div>
                                         <h3 class="text-blue fw-bold mb-0">Tauhid Soleman</h3>
                                         <small class="opacity-75 mb-4">15 minutes ago</small>
-                                        <p class="mb-0">"Cinta seperti buku, semakin dibaca semakin suka."</p>
-                                        <em>~ Alexander Sattler</em>
+                                        <p class="mb-0">"Orang yang lemah tidak mampu memaafkan. Memaafkan adalah ciri orang yang kuat."</p>
+                                        <em>~ Mahatma Gandhi</em>
                                     </div>
                                 </div>
                             </div>
@@ -576,31 +894,31 @@
                             <h3 class="mb-0 text-dark">Mari Berdiskusi</h3>
                             <p class="text-muted">untuk Membangun Negeri</p>
                             <div class="d-flex gap-4 mb-3 justify-content-lg-start justify-content-center">
-                                <a href="#" class="nav-link">
-                                    <i class="bi bi-facebook fs-3 text-blue"></i>
+                                <a href="https://www.facebook.com/profile.php?id=61555734137233" target="_blank" class="nav-link social-icons">
+                                    <i class="bi bi-facebook fs-3"></i>
                                 </a>
-                                <a href="#" class="nav-link">
-                                    <i class="bi bi-instagram fs-3 text-blue"></i>
+                                <a href="https://www.instagram.com/walikotakita" target="_blank" class="nav-link social-icons">
+                                    <i class="bi bi-instagram fs-3"></i>
                                 </a>
-                                <a href="#" class="nav-link">
-                                    <i class="bi bi-tiktok fs-3 text-blue"></i>
+                                <a href="https://www.tiktok.com/@walikotakita" target="_blank" class="nav-link social-icons">
+                                    <i class="bi bi-tiktok fs-3"></i>
                                 </a>
                             </div>
                             <p class="text-muted">walikotakita@gmail.com</p>
                         </div>
                         <div class="col-lg-8 col-sm-12 order-lg-1">
                             <div class="card card-body p-4 border-0 rounded-4 shadow-sm">
-                                <form action="" method="post">
+                                <form action="https://formspree.io/f/xvoeyjzz" method="POST">
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control focus" id="form-nama" placeholder="Nama Anda" />
+                                        <input type="text" name="nama" class="form-control focus" id="form-nama" placeholder="Nama Anda" />
                                         <label for="form-nama">Nama Anda</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="form-email" placeholder="nama@email.com" />
+                                        <input type="email" name="email" class="form-control" id="form-email" placeholder="nama@email.com" />
                                         <label for="form-email">Email</label>
                                     </div>
                                     <div class="form-floating mb-4">
-                                        <textarea class="form-control" placeholder="Tinggalkan komentar disini..." id="form-komentar" style="height: 100px"></textarea>
+                                        <textarea class="form-control" name="message" placeholder="Tinggalkan komentar disini..." id="form-komentar" style="height: 100px"></textarea>
                                         <label for="form-komentar">Komentar</label>
                                     </div>
                                     <button type="submit" class="btn btn-blue w-25 text-center">Kirim</button>
@@ -618,13 +936,13 @@
                         <a href="#" id="footer-header-link" class="nav-link fs-1 text-white mb-0 lh-sm">walikotakita</a>
                         <div class="text-light small mb-3">Mari Bersama-sama <span class="fw-bold text-decoration-underline">Membangun Kota</span></div>
                         <div class="d-flex gap-4 justify-content-center">
-                            <a href="#" class="nav-link">
+                            <a href="https://www.facebook.com/profile.php?id=61555734137233" class="nav-link">
                                 <i class="bi bi-facebook text-light"></i>
                             </a>
-                            <a href="#" class="nav-link">
+                            <a href="https://www.instagram.com/walikotakita" class="nav-link">
                                 <i class="bi bi-instagram text-light"></i>
                             </a>
-                            <a href="#" class="nav-link">
+                            <a href="https://www.tiktok.com/@walikotakita" class="nav-link">
                                 <i class="bi bi-tiktok text-light"></i>
                             </a>
                         </div>
@@ -644,16 +962,35 @@
 
         <script>
             //rotate and move elements with a class of "box" ("x" is a shortcut for a translateX() transform) over the course of 1 second.
-            gsap.from(".hero-img", { y: 100, opacity: 0, duration: 1, delay: 0.4 });
-            gsap.from(".hero-img2", { y: 100, opacity: 0, duration: 1, delay: 0.6 });
-            gsap.from(".bubble1", { y: 100, opacity: 0, duration: 0.6, delay: 0.8 });
-            gsap.from(".bubble2", { y: 100, opacity: 0, duration: 0.6, delay: 1 });
-            gsap.from(".hero-text", { x: -100, opacity: 0, duration: 1 });
+            gsap.from('.hero-img', { y: 100, opacity: 0, duration: 1, delay: 0.4 });
+            gsap.from('.hero-img2', { y: 100, opacity: 0, duration: 1, delay: 0.6 });
+            gsap.from('.bubble1', { y: 100, opacity: 0, duration: 0.6, delay: 0.8 });
+            gsap.from('.bubble2', { y: 100, opacity: 0, duration: 0.6, delay: 1 });
+            gsap.from('.hero-text', { x: -100, opacity: 0, duration: 1 });
         </script>
 
         <script>
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
             const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+        </script>
+
+        <script>
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Apply speech bubble style to the initially active button
+            document.querySelector('.button-tabs.active').classList.add('speech-bubble');
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    // Remove speech-bubble class from all buttons
+                    navLinks.forEach((navLink) => {
+                        navLink.classList.remove('speech-bubble');
+                    });
+
+                    // Add speech-bubble class to the newly active button
+                    link.classList.add('speech-bubble');
+                });
+            });
         </script>
     </body>
 </html>
